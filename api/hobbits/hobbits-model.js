@@ -6,7 +6,7 @@ async function getAll() {
 }
 
 async function getById(id) {
-  const hobbit = await db("hobbits").where("id", id);
+  const hobbit = await db("hobbits").where("id", id).first();
   return hobbit;
 }
 
